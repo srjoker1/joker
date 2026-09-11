@@ -179,4 +179,5 @@ def main():
 
     last_state = load_last_state()
     if not should_send(direction, last_state):
-        print(f"سیگنال {direction} تکراریه (کم
+                print("Duplicate signal within cooldown period, not sent.")
+
