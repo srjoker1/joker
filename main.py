@@ -38,6 +38,7 @@ def send_telegram_message(text):
 
 
 def classify(total_score):
+        print("DEBUG:", fund_score, silver_score, tech_score, total_score)
     if total_score >= 50:
         return "🟢 سیگنال خرید قوی (BUY)", "buy"
     elif total_score >= ACTIONABLE_THRESHOLD:
